@@ -9,8 +9,6 @@ interface ResumeProps {
   skills: string[];
 }
 
-import React from 'react';
-
 const Resume: React.FC<ResumeProps> = ({ personalInfo, education, experience, skills }) => {
   const containerStyle = {
     fontFamily: 'Arial, sans-serif',
