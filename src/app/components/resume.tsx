@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React, { CSSProperties } from 'react';
 
 interface ResumeProps {
   personalInfo: { name: string; email: string; phone: string };
@@ -10,23 +10,23 @@ interface ResumeProps {
 }
 
 const Resume: React.FC<ResumeProps> = ({ personalInfo, education, experience, skills }) => {
-  const headerStyle = {
+  const headerStyle: CSSProperties = {
     textAlign: 'center',
     color: '#333',
     fontFamily: 'Arial, sans-serif',
   };
 
-  const sectionStyle = {
+  const sectionStyle: CSSProperties = {
     marginBottom: '20px',
     fontFamily: 'Arial, sans-serif',
   };
 
-  const sectionTitleStyle = {
+  const sectionTitleStyle: CSSProperties = {
     color: '#2c3e50',
     textDecoration: 'underline',
   };
 
-  const itemStyle = {
+  const itemStyle: CSSProperties = {
     margin: '10px 0',
     padding: '10px',
     backgroundColor: '#fff',
@@ -34,7 +34,7 @@ const Resume: React.FC<ResumeProps> = ({ personalInfo, education, experience, sk
     boxShadow: '0 1px 4px rgba(0, 0, 0, 0.1)',
   };
 
-  const skillsListStyle = {
+  const skillsListStyle: CSSProperties = {
     listStyle: 'disc',
     paddingLeft: '20px',
   };
@@ -74,4 +74,3 @@ const Resume: React.FC<ResumeProps> = ({ personalInfo, education, experience, sk
 };
 
 export default Resume;
-
