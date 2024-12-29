@@ -10,23 +10,15 @@ interface ResumeProps {
 }
 
 const Resume: React.FC<ResumeProps> = ({ personalInfo, education, experience, skills }) => {
-  const containerStyle = {
-    fontFamily: 'Arial, sans-serif',
-    padding: '20px',
-    backgroundColor: '#f4f4f4',
-    borderRadius: '8px',
-    width: '80%',
-    margin: '20px auto',
-    boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
-  };
-
   const headerStyle = {
     textAlign: 'center',
     color: '#333',
+    fontFamily: 'Arial, sans-serif',
   };
 
   const sectionStyle = {
     marginBottom: '20px',
+    fontFamily: 'Arial, sans-serif',
   };
 
   const sectionTitleStyle = {
@@ -48,10 +40,10 @@ const Resume: React.FC<ResumeProps> = ({ personalInfo, education, experience, sk
   };
 
   return (
-    <div style={containerStyle}>
+    <div>
       <h1 style={headerStyle}>{personalInfo.name}</h1>
-      <p>Email: {personalInfo.email}</p>
-      <p>Phone: {personalInfo.phone}</p>
+      <p style={{ fontFamily: 'Arial, sans-serif' }}>Email: {personalInfo.email}</p>
+      <p style={{ fontFamily: 'Arial, sans-serif' }}>Phone: {personalInfo.phone}</p>
 
       <div style={sectionStyle}>
         <h2 style={sectionTitleStyle}>Education:</h2>
@@ -82,3 +74,4 @@ const Resume: React.FC<ResumeProps> = ({ personalInfo, education, experience, sk
 };
 
 export default Resume;
+
