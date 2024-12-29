@@ -61,6 +61,7 @@ const Resume: React.FC<ResumeProps> = ({ personalInfo, education, experience, sk
     borderRadius: '8px',
     boxShadow: '0 1px 6px rgba(0, 0, 0, 0.1)',
     marginBottom: '15px',
+    color: '#000', // Text color set to black
   };
 
   const skillsListStyle: CSSProperties = {
@@ -126,4 +127,3 @@ const Resume: React.FC<ResumeProps> = ({ personalInfo, education, experience, sk
 };
 
 export default Resume;
-
